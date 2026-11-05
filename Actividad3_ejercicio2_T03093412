@@ -1,0 +1,39 @@
+print("Ejercicio 2: Menú de la Cafetería Charme")
+print("Nombre: Samantha Jocelyne Rodriguez Ramirez")
+print("Matrícula: T03093412")
+
+# while True: el menú se repite siempre; la única salida es el break
+while True:
+    # Mostramos el menú
+    print()
+    print("===== ☕ CAFETERÍA CHARME =====")
+    print("1. Ver bebidas")
+    print("2. Ver postres")
+    print("3. Ver horario")
+    print("4. Salir")
+
+    # Pedimos la opción
+    opcion = input("Elige una opción: ")
+
+    # Revisamos qué opción eligió
+    if opcion == "1":
+        print("🧋 Frappé de oreo ..... $65")
+        print("🍵 Matcha latte ........ $85")
+        print("🥭 Malteada de mango .... $55")
+
+    elif opcion == "2":
+        print("🍪 Galleta chispas de chocolate .... $35")
+        print("🧁 Cupcake de vainilla ........ $40")
+        print("🍩 Dona glaseada .......... $25")
+
+    elif opcion == "3":
+        print("🕘 Lunes a viernes: 7:00 a 19:00")
+        print("🕘 Sábados: 9:00 a 14:00")
+
+    elif opcion == "4":
+        print("👋 ¡Gracias por visitarnos!")
+        # El cliente eligió Salir: break nos saca del while
+        break
+
+    else:
+        print("❌ Opción no válida, elige del 1 al 4")
